@@ -1,5 +1,7 @@
 package com.wugaldeq.udemy.mymail.model;
 
+import com.wugaldeq.udemy.mymail.utils.Util;
+
 /**
  * Clase "model" que representa un correo en la aplicación
  * Created by wugaldeq on 13-02-2018.
@@ -10,12 +12,16 @@ public class Mail {
     private String message;
     private String emailAdress;
     private String color;
-    
-    public Mail(String subject, String message, String emailAdress, String color) {
+
+    public Mail() {
+
+    }
+
+    public Mail(String subject, String message, String emailAdress) {
         this.subject = subject;
         this.message = message;
         this.emailAdress = emailAdress;
-        this.color = color;
+        this.color = Util.getRandomColor();
     }
 
     public String getSubject() {
