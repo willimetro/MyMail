@@ -16,6 +16,7 @@ public class MyMailActivity extends AppCompatActivity implements ListMailFragmen
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_mail);
+        setMultiPanel();
     }
 
     @Override
